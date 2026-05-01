@@ -29,6 +29,9 @@ h1 {
     cursor: pointer;
 }
 
+#taco-button:active {
+    transform: rotate(4deg);
+}
 .shop-section {
     margin-top: 101px;
     background-color: rgb(203, 178, 79);
@@ -63,11 +66,28 @@ button:hover {
     animation: taco-shake 0.3s ease-in-out;
 }
 
-
-
-#taco-button:active {
-    transform: rotate(4deg);
+.floating-number {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px white;
+    pointer-events: none;
+    animation: float-up 0.5s ease-out forwards;
 }
+
+
+
+
+.floating-number {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px white;
+    pointer-events: none;
+}
+
 
 #double-click-button { background-color: rgb(0, 255, 21); }
 #auto-maker-button { background-color: red; }
@@ -76,3 +96,15 @@ button:hover {
 
 
 
+
+
+@keyframes float-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
