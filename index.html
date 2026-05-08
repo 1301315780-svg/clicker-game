@@ -6,29 +6,100 @@
     <title>Taco Clicker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- ============================================ -->
+    <!-- MAIN GAME CONTAINER -->
+    <!-- ============================================ -->
     <div class="game-container">
+        
+        <!-- ============================================ -->
+        <!-- HEADER - Game Title -->
+        <!-- ============================================ -->
         <h1>Taco Clicker</h1>
         
+        
+        <!-- ============================================ -->
+        <!-- SCORE DISPLAY - Shows Current Taco Count -->
+        <!-- ============================================ -->
         <div class="score-display">
             <span>Tacos: </span>
             <span id="taco-count">0</span>
         </div>
         
+        
+        <!-- ============================================ -->
+        <!-- TACO SECTION - Main Clickable Taco -->
+        <!-- ============================================ -->
         <div class="taco-section">
             <img id="taco-button" src="taco.jpg" alt="Click the taco!">
         </div>
         
-   <div class="shop-section">
-    <h2>Shop</h2>
-    <button id="double-click-button">Double Click (Cost: 50 tacos)</button>
-    <button id="triple-click-button" style="display: none;">Triple Click (Cost: 750 tacos)</button>
-    <button id="auto-maker-button">Auto Taco Maker (Cost: 1000 tacos)</button>
-    <button id="taco-factory-button">Taco Factory (Cost: 5000 tacos)</button>
-    <button id="golden-taco-button">Golden Taco (Cost: 10000 tacos)</button>
-</div>
-
+        
+        <!-- ============================================ -->
+        <!-- SHOP SECTION - All Upgrades and Purchases -->
+        <!-- ============================================ -->
+        <div class="shop-section">
+            <h2>Shop</h2>
+            
+            
+            <!-- Click Upgrades -->
+            <button id="double-click-button">
+                Double Click (Cost: 50 tacos)
+            </button>
+            
+            <button id="triple-click-button" style="display: none;">
+                Triple Click (Cost: 750 tacos)
+            </button>
+            
+            
+            <!-- Auto Maker -->
+            <button id="auto-maker-button">
+                Auto Taco Maker (Cost: 1000 tacos)
+            </button>
+            
+            
+            <!-- Factory System -->
+            <button id="taco-factory-button">
+                Taco Factory (Cost: 5000 tacos)
+            </button>
+            
+            <!-- Factory Worker Buttons (Hidden until factory is bought) -->
+            <button id="hire-worker-button" style="display: none;">
+                Hire Worker (Cost: 1000 tacos)
+            </button>
+            
+            <button id="fast-worker-button" style="display: none;">
+                Fast Worker Upgrade (Cost: 4000 tacos)
+            </button>
+            
+            <button id="alien-worker-button" style="display: none;">
+                Alien Worker Upgrade (Cost: 20000 tacos)
+            </button>
+            
+            
+            <!-- Future Upgrade -->
+            <button id="golden-taco-button">
+                Golden Taco (Cost: 10000 tacos)
+            </button>
+            
+            
+            <!-- Worker Info Display (Hidden until factory is bought) -->
+            <div id="worker-info" style="display: none; margin-top: 20px; font-size: 1.2em;">
+                <p>Workers: <span id="worker-count">0</span></p>
+            </div>
+            
+        </div>
+        <!-- End of shop-section -->
+        
+    </div>
+    <!-- End of game-container -->
     
+    
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT - Load Game Logic -->
+    <!-- ============================================ -->
     <script src="script.js"></script>
+    
 </body>
 </html>
