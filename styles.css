@@ -79,20 +79,15 @@ button:hover {
 
 
 
-.floating-number {
-    position: absolute;
-    font-size: 2em;
-    font-weight: bold;
-    color: black;
-    text-shadow: 2px 2px white;
-    pointer-events: none;
-}
 
 
 #double-click-button { background-color: rgb(0, 255, 21); }
-#auto-maker-button { background-color: red; }
+#auto-maker-button { background-color: rgb(183, 0, 255); }
 #taco-factory-button { background-color: rgba(167, 22, 162, 0.968); }
 #golden-taco-button { background-color: rgb(238, 255, 0); }
+#fast-worker-button { background-color: blue; }
+#alien-worker-button { background-color: green; }
+
 
 
 
